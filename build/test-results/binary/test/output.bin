@@ -1,0 +1,52 @@
+Ÿ2018-12-02T14:23:38.646 | est worker | ClasspathStoryFinder | INFO   - Searching for stories called [berlin-clock.story] in [[C:\MyProjects\java-berlin-clock\build\classes\test, C:\MyProjects\java-berlin-clock\build\resources\test, C:\MyProjects\java-berlin-clock\build\classes\main]] 
+Ù2018-12-02T14:23:38.693 | est worker | aviouralTestEmbedder | INFO   - Running [BehaviouralTestEmbedder] with spring_stories [[file:/C:/MyProjects/java-berlin-clock/build/resources/test/stories/berlin-clock.story]] 
+!Processing system properties {}
+ÜUsing controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,threads=1]
+eRunning story file:/C:/MyProjects/java-berlin-clock/build/resources/test/stories/berlin-clock.story
+ÖStory: The Berlin Clock
+(file:/C:/MyProjects/java-berlin-clock/build/resources/test/stories/berlin-clock.story)
+Meta:
+@scope interview
+
+Scenario: Midnight
+When the time is 00:00:00
+Then the clock should look like
+Y
+OOOO
+OOOO
+OOOOOOOOOOO
+cOOOO
+
+Scenario: Middle of the afternoon
+When the time is 13:17:01
+Then the clock should look like
+O
+RROO
+RRRO
+YYROOOOOOOO
+`YYOO
+
+Scenario: Just before midnight
+When the time is 23:59:59
+Then the clock should look like
+O
+RRRR
+RRRO
+YYRYYRYYRYY
+TYYYY
+
+Scenario: Midnight
+When the time is 24:00:00
+Then the clock should look like
+Y
+RRRR
+RRRR
+OOOOOOOOOOO
+Þ
+(BeforeStories)
+
+
+(AfterStories)
+
+Generating reports view to 'C:\MyProjects\java-berlin-clock\build\classes\jbehave' using formats '[stats, html, console]' and view properties '{defaultFormats=stats, decorateNonHtml=true, viewDirectory=view, decorated=ftl/jbehave-report-decorated.ftl, reports=ftl/jbehave-reports-with-totals.ftl, maps=ftl/jbehave-maps.ftl, navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl}'
+hReports view generated with 1 stories (of which 0 pending) containing 4 scenarios (of which 0 pending)
