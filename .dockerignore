@@ -1,0 +1,56 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+README_APP.md
+SETUP_STATUS.md
+*.md
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+out/
+*.class
+*.jar
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Node modules (will be installed in containers)
+node_modules/
+
+# Test results
+coverage/
+test-results/
+
+# Gradle
+.gradle/
+gradle/wrapper/
+gradlew
+gradlew.bat
+
+# Temporary files
+tmp/
+*.tmp
+
