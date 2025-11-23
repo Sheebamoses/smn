@@ -1,0 +1,16 @@
+.results-list {
+  margin-top: 30px;
+}
+
+.results-title {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.results-container {
+  display: grid;
+  gap: 20px;
+}
+

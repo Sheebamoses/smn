@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ubs.opsit.interviews.BerlinTimeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-12-02T08:53:39" hostname="WINDOWS-TCR8A6R" time="0.0">
+  <properties/>
+  <testcase name="BerlinTime_Default_Test" classname="com.ubs.opsit.interviews.BerlinTimeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
