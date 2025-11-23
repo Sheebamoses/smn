@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: smn-ingress
+  annotations:
+    # TODO: You may need to add annotations specific to your Ingress controller
+    # For example, for an NGINX Ingress controller:
+    # kubernetes.io/ingress.class: "nginx"
+    # nginx.ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  rules:
+  # TODO: Replace with your actual domain name
+  - host: smn.your-domain.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: frontend
+            port:
+              number: 80
