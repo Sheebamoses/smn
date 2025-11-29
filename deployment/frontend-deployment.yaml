@@ -14,9 +14,8 @@ spec:
     spec:
       containers:
       - name: frontend
-        # TODO: Replace with the actual image from your container registry
-        # Make sure to build the image with REACT_APP_API_URL set to http://backend:3001
-        image: your-registry/smn-frontend:latest
+        image: smn-frontend:local
+        imagePullPolicy: Never
         ports:
         - containerPort: 80
         readinessProbe:

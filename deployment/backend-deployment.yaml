@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
       - name: backend
-        # TODO: Replace with the actual image from your container registry
-        image: your-registry/smn-backend:latest
+        image: smn-backend:local
+        imagePullPolicy: Never
         ports:
         - containerPort: 3001
         env:

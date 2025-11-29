@@ -9,9 +9,7 @@ metadata:
     # nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-  # TODO: Replace with your actual domain name
-  - host: smn.your-domain.com
-    http:
+  - http:
       paths:
       - path: /
         pathType: Prefix

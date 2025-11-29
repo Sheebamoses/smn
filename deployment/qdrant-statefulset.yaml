@@ -22,6 +22,12 @@ spec:
         volumeMounts:
         - name: qdrant-data
           mountPath: /qdrant/storage
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 6333
+          initialDelaySeconds: 5
+          periodSeconds: 5
   volumeClaimTemplates:
   - metadata:
       name: qdrant-data
