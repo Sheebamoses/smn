@@ -1,0 +1,17 @@
+# This file is used by kustomize to manage the Kubernetes resources for this application.
+# I will add the resources to this file as I create them.
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - backend-deployment.yaml
+  - backend-service.yaml
+  - frontend-deployment.yaml
+  - frontend-service.yaml
+  - postgres-secret.yaml
+  - postgres-statefulset.yaml
+  - postgres-service.yaml
+  - qdrant-statefulset.yaml
+  - qdrant-service.yaml
+  - ingress.yaml
